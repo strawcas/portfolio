@@ -1,0 +1,61 @@
+.shell {
+    position: relative;
+}
+.progress {
+    position: fixed;
+    z-index: 60;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #9071ce, #dfbcff);
+    transform: scaleX(0);
+    transform-origin: left;
+    pointer-events: none;
+}
+.control {
+    position: fixed;
+    z-index: 60;
+    bottom: 18px;
+    right: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #c3a0ef40;
+    border-radius: 30px;
+    background: #100e22e8;
+    color: #d7c5ef;
+    padding: 10px 14px;
+    font:
+        11px var(--font-geist-sans),
+        sans-serif;
+    cursor: pointer;
+    backdrop-filter: blur(12px);
+}
+.control:focus-visible {
+    outline: 2px solid #d7c5ef;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    @keyframes orbit {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .control {
+        display: none;
+    }
+}
+@media (max-width: 640px) {
+
+    .control {
+        padding: 8px 11px;
+        font-size: 10px;
+        bottom: 12px;
+        right: 12px;
+    }
+}

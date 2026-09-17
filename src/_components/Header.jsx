@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiDocument } from "react-icons/hi2";
 import Image from "next/image";
+import { contactLinks } from "@/_data/contact";
 
 export default function Header() {
     const socialLinksRef = useRef(null);
@@ -135,7 +136,7 @@ export default function Header() {
                 {/* SOCIAL LINKS */}
                 <div ref={socialLinksRef} className="flex items-center gap-1 text-3xl text-white sm:gap-3 sm:text-4xl">
                     <a
-                        href="https://github.com/"
+                        href={contactLinks.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"
@@ -148,7 +149,7 @@ export default function Header() {
                     </a>
 
                     <a
-                        href="https://linkedin.com/"
+                        href={contactLinks.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
@@ -161,7 +162,7 @@ export default function Header() {
                     </a>
 
                     <a
-                        href="/resume.pdf"
+                        href={contactLinks.resume}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Resume"
