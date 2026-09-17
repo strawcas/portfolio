@@ -5,6 +5,7 @@ import Projects from "@/_components/Projects";
 import About from "@/_components/About";
 import Contact from "@/_components/Contact";
 import PortfolioMotion from "@/_components/PortfolioMotion";
+import MusicPlayer from "@/_components/MusicPlayer";
 
 export default function page() {
     return (
@@ -15,6 +16,7 @@ export default function page() {
             <Projects />
             <About />
             <Contact />
+            <MusicPlayer />
         </PortfolioMotion>
     );
 }

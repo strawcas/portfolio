@@ -27,20 +27,12 @@ export default function Experience() {
         >
             <div className={styles.container}>
                 <header className={styles.heading}>
-                    <p className={styles.eyebrow}>
-                        <span /> The journey so far
-                    </p>
                     <div className={styles.headingRow}>
                         <h2 id="experience-heading">
                             Work
                             <br />
                             <span>experience.</span>
                         </h2>
-                        <p className={styles.intro}>
-                            Turning what I learn into
-                            <br />
-                            things people can use.
-                        </p>
                     </div>
                 </header>
                 <article
@@ -62,12 +54,6 @@ export default function Experience() {
                             <p className={styles.company}>
                                 Armada Logics
                             </p>
-                            <span
-                                className={styles.index}
-                                aria-hidden="true"
-                            >
-                                01 /
-                            </span>
                         </div>
                         <h3 id="experience-role">
                             Junior Software
@@ -115,10 +101,6 @@ export default function Experience() {
                         </div>
                     </div>
                 </article>
-                <div className={styles.footer} aria-hidden="true">
-                    <span>Learning. Building. Growing.</span>
-                    <span>✦</span>
-                </div>
             </div>
         </section>
     );

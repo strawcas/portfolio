@@ -36,10 +36,7 @@ export default function Contact() {
             className={styles.section}
         >
             <div className={styles.container}>
-                <div className={styles.sectionLabel}>
-                    <p>Contact</p>
-                    <span aria-hidden="true">05 /</span>
-                </div>
+                <div className={styles.sectionLabel}></div>
 
                 <header className={styles.heading}>
                     <h2 id="contact-heading">

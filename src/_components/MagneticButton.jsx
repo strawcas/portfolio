@@ -92,38 +92,12 @@ export default function MagneticButton({ children }) {
     return (
         <div
             ref={magneticZoneRef}
-            className="
-                mt-8 flex w-fit max-w-full items-center justify-center
-                lg:aspect-square
-                lg:w-[22rem]
-                lg:rounded-full
-                lg:border
-                lg:border-white/15
-            "
+            className="mt-8 flex w-fit max-w-full items-center justify-center lg:aspect-square lg:w-[22rem] lg:rounded-full lg:border lg:border-white/15"
         >
             <button
                 ref={exploreButtonRef}
                 type="button"
-                className="
-                    relative isolate inline-flex shrink-0 cursor-pointer
-                    items-center gap-3 rounded-full bg-white px-7 py-3.5
-                    text-sm font-medium text-[#040517]
-                    transition-colors duration-150
-                    hover:bg-slate-200
-                    focus-visible:outline-2
-                    focus-visible:outline-offset-4
-                    focus-visible:outline-white
-                    active:bg-slate-300
-                    motion-reduce:transition-none
-
-                    before:pointer-events-none
-                    before:absolute
-                    before:-inset-x-12
-                    before:-inset-y-16
-                    before:z-[-1]
-                    before:content-['']
-                    before:bg-[radial-gradient(ellipse_at_center,rgb(170_163_225/22%)_0%,rgb(139_130_205/10%)_35%,transparent_70%)]
-                "
+                className="relative isolate inline-flex shrink-0 cursor-pointer items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-[#040517] transition-colors duration-150 hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white active:bg-slate-300 motion-reduce:transition-none before:pointer-events-none before:absolute before:-inset-x-12 before:-inset-y-16 before:z-[-1] before:content-[''] before:bg-[radial-gradient(ellipse_at_center,rgb(170_163_225/22%)_0%,rgb(139_130_205/10%)_35%,transparent_70%)]"
             >
                 {children}
             </button>

@@ -1,6 +1,49 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Adding projects
+
+Edit `src/_data/projects.json`. Every object in this array renders a card on
+`/projects`, in the same order as the file. Set `"featured": true` to also show a
+project in the homepage's Selected projects section. The existing three projects
+have been moved into this file; no new project content is required in JSX.
+
+Copy this template into the array and replace its values (use a unique `id`):
+
+```json
+{
+    "id": "my-project",
+    "name": "My project",
+    "category": "Web application",
+    "description": "A short description of what the project does.",
+    "stack": ["Next.js", "React"],
+    "details": ["A feature or implementation detail."],
+    "featured": false,
+    "image": "",
+    "imageAlt": "",
+    "demoUrl": "",
+    "githubUrl": ""
+}
+```
+
+- `id`, `name`, and `description` are required. Use a unique, lowercase,
+  hyphenated `id` such as `my-project`.
+- `category`, `stack`, and `details` are optional. Empty or omitted lists are hidden.
+- For a screenshot, put the file in `public/projects/` and set `image` to a path
+  such as `/projects/my-project.png`. Set `imageAlt` to describe the screenshot.
+  Leave `image` empty for the default cover; no image or icon imports are needed.
+- Set `demoUrl` and/or `githubUrl` to full HTTPS URLs to show those links. Leave
+  them empty or omit them to hide the buttons.
+- The optional `icon` accepts `nextjs`, `react`, or `flutter`, with a generic code
+  icon as the default. The existing projects also use optional `artwork` values
+  `alpine`, `subtrack`, and `gym` to retain their illustrations. Omit `artwork` on
+  new entries to use the default cover. An `image` takes priority over `artwork`.
+- Card numbers and the project count are automatic. An empty array (`[]`) shows
+  an empty state. Keep the file valid JSON: double quotes and no trailing commas.
+
+Saving the JSON updates the pages during `npm run dev`. For a deployed site,
+rebuild and redeploy after changing the file.
+
+## Local development
 
 First, run the development server:
 

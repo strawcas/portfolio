@@ -107,7 +107,26 @@ export default function PortfolioMotion({ children }) {
                     });
                 };
 
-                const hero = select("main h1, main p");
+                // Move the outer container so entrance and button hover motion
+                // on its children can run independently of the scroll exit.
+                const heroSection = select("#top")[0];
+                const heroContent = select("[data-hero-content]")[0];
+                if (heroSection && heroContent) {
+                    gsap.to(heroContent, {
+                        y: () => -Math.min(window.innerHeight * 0.2, 180),
+                        autoAlpha: 0,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: heroSection,
+                            start: "top top",
+                            end: "45% top",
+                            scrub: 0.35,
+                            invalidateOnRefresh: true,
+                        },
+                    });
+                }
+
+                const hero = select("[data-hero-content] h1, [data-hero-content] p");
                 if (hero.length) {
                     gsap.from(hero, {
                         y: 22,

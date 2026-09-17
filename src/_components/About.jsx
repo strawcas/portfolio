@@ -2,6 +2,7 @@ import Image from "next/image";
 import { HiArrowUpRight } from "react-icons/hi2";
 import portrait from "../../public/self-portrait.png";
 import styles from "./About.module.css";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -11,12 +12,7 @@ export default function About() {
             className={styles.section}
         >
             <div className={styles.container}>
-                <div className={styles.sectionLabel}>
-                    <p>
-                        <span aria-hidden="true" /> About me
-                    </p>
-                    <span aria-hidden="true">04 /</span>
-                </div>
+                <div className={styles.sectionLabel}></div>
 
                 <div className={styles.layout}>
                     <figure className={styles.portrait}>
@@ -58,60 +54,43 @@ export default function About() {
                                 Hi, I&apos;m Joseph.
                             </p>
                             <p>
-                                I&apos;m a software engineer who
-                                enjoys turning ideas into useful
-                                applications — connecting thoughtful
-                                interfaces with the logic that makes
-                                them work.
+                                I&#39;m a software engineer and
+                                Computer Science graduate who loves
+                                coding, math, web development, game
+                                development, and learning how things
+                                work. A lot of what I know came from
+                                Udemy courses, documentation, and
+                                building projects that pushed me
+                                beyond what I learned in school.
                             </p>
                             <p>
-                                From building web features at Armada
-                                Logics to creating booking platforms,
-                                subscription tools, and a fitness app,
-                                I&apos;ve worked across the frontend,
-                                backend, and mobile. I like seeing how
-                                all the pieces come together.
+                                I&#39;m naturally curious and I like
+                                understanding things deeply. When I
+                                get stuck on an idea, I&#39;ll
+                                sometimes literally walk around in
+                                circles thinking about it until it
+                                finally clicks. I graduated cum laude,
+                                but I&#39;m still constantly learning,
+                                experimenting, and trying to become a
+                                better developer.
                             </p>
                         </div>
 
-                        <dl className={styles.approach}>
-                            <div>
-                                <dt>
-                                    <span aria-hidden="true">01</span>{" "}
-                                    Build with purpose
-                                </dt>
-                                <dd>
-                                    Keep the experience clear and the
-                                    details considered.
-                                </dd>
-                            </div>
-                            <div>
-                                <dt>
-                                    <span aria-hidden="true">02</span>{" "}
-                                    Stay curious
-                                </dt>
-                                <dd>
-                                    Learn through building, and
-                                    improve with every iteration.
-                                </dd>
-                            </div>
-                        </dl>
-
                         <div className={styles.links}>
-                            <a
+                            <Link
                                 className={styles.primaryLink}
                                 href="#projects"
                             >
                                 Explore my projects
                                 <HiArrowUpRight aria-hidden="true" />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 className={styles.secondaryLink}
                                 href="#experience"
                             >
                                 My experience
                                 <HiArrowUpRight aria-hidden="true" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

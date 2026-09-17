@@ -2,8 +2,8 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background: #0b0a1c;
-    color: #f3f0fa;
+    background: var(--portfolio-background);
+    color: var(--portfolio-text);
     font-family: var(--font-geist-sans), sans-serif;
     padding: 70px 32px 48px;
     scroll-margin-top: 0;
@@ -27,14 +27,14 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #bda9dd;
+    color: var(--portfolio-accent);
 }
 .eyebrow span {
     width: 6px;
     height: 6px;
-    background: #c5a2ff;
+    background: var(--portfolio-accent);
     border-radius: 50%;
-    box-shadow: 0 0 16px #aa7af0;
+    box-shadow: 0 0 16px rgb(var(--portfolio-accent-rgb) / 0.3);
 }
 .headingRow {
     display: flex;
@@ -50,10 +50,10 @@
     letter-spacing: -0.065em;
 }
 .heading h2 span {
-    color: #baa4df;
+    color: var(--portfolio-accent);
 }
 .intro {
-    color: #a5a0b5;
+    color: var(--portfolio-muted);
     font-size: 15px;
     line-height: 1.8;
     padding-bottom: 6px;
@@ -79,13 +79,13 @@
 }
 .period p {
     margin-top: 15px;
-    color: #b3adbf;
+    color: var(--portfolio-muted);
     font-size: 14px;
 }
 .label {
     display: inline-block;
     margin-top: 26px;
-    color: #bea6e1;
+    color: var(--portfolio-accent);
 }
 .details {
     position: relative;
@@ -100,10 +100,10 @@
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: #c4a6ef;
+    background: var(--portfolio-accent);
     box-shadow:
-        0 0 0 6px #c4a6ef0c,
-        0 0 24px #c4a6ef40;
+        0 0 0 6px rgb(var(--portfolio-accent-rgb) / 0.047),
+        0 0 24px rgb(var(--portfolio-accent-rgb) / 0.251);
 }
 .companyRow {
     display: flex;
@@ -112,12 +112,12 @@
     gap: 20px;
 }
 .company {
-    color: #c5aadf;
+    color: var(--portfolio-accent);
     font-size: 15px;
     font-weight: 500;
 }
 .index {
-    color: #857b99;
+    color: var(--portfolio-subtle);
 }
 .details h3 {
     font-size: clamp(26px, 3.4vw, 40px);
@@ -127,7 +127,7 @@
     margin-top: 18px;
 }
 .location {
-    color: #9b94ab;
+    color: var(--portfolio-subtle);
     font-size: 13px;
     margin-top: 16px;
 }
@@ -143,18 +143,18 @@
     border-top: 1px solid #ffffff12;
 }
 .number {
-    color: #9b83bd;
+    color: var(--portfolio-subtle);
     padding-top: 4px;
 }
 .highlights h4 {
     font-size: 15px;
     font-weight: 500;
-    color: #e1dce9;
+    color: var(--portfolio-text-soft);
 }
 .highlights p {
     font-size: 14px;
     line-height: 1.85;
-    color: #a6a0b5;
+    color: var(--portfolio-muted);
     margin-top: 7px;
     max-width: 520px;
 }
@@ -162,7 +162,7 @@
     margin-top: 24px;
 }
 .stackLabel {
-    color: #93899f;
+    color: var(--portfolio-subtle);
     margin-bottom: 14px;
 }
 .stack ul {
@@ -174,10 +174,10 @@
 }
 .stack li {
     padding: 7px 13px;
-    border: 1px solid #b9a0de26;
+    border: 1px solid rgb(var(--portfolio-accent-rgb) / 0.149);
     border-radius: 5px;
-    color: #c4b9d6;
-    background: #bca0ec05;
+    color: var(--portfolio-accent);
+    background: rgb(var(--portfolio-accent-rgb) / 0.02);
     font-size: 12px;
 }
 .footer {
@@ -186,7 +186,7 @@
     margin-top: 80px;
     border-top: 1px solid #ffffff14;
     padding-top: 24px;
-    color: #8f839f;
+    color: var(--portfolio-subtle);
     font-size: 10px;
 }
 @media (max-width: 640px) {
@@ -253,8 +253,11 @@
     bottom: 0;
     left: -1px;
     width: 1px;
-    background: linear-gradient(#b99adf, #e1caf9);
-    box-shadow: 0 0 12px #b99adf70;
+    background: linear-gradient(
+        var(--portfolio-subtle),
+        var(--portfolio-text-soft)
+    );
+    box-shadow: 0 0 12px rgb(var(--portfolio-accent-rgb) / 0.439);
     transform: scaleY(var(--timeline-progress, 1));
     transform-origin: top;
 }

@@ -1,0 +1,71 @@
+[
+    {
+        "id": "alpine",
+        "name": "Alpine Haven",
+        "category": "Full-stack booking platform",
+        "description": "A quieter way to plan a getaway. A cabin booking platform with discovery, reservations, and secure guest accounts.",
+        "stack": [
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "Supabase",
+            "NextAuth.js"
+        ],
+        "details": [
+            "Cabin filtering, date selection, and reservation management.",
+            "Google OAuth, session management, and authorization for guest accounts and reservations.",
+            "React Server Components and server actions backed by Supabase PostgreSQL."
+        ],
+        "featured": true,
+        "artwork": "alpine",
+        "icon": "nextjs",
+        "image": "/Alpine Haven.png",
+        "imageAlt": "Screenshot of Alpine Haven project",
+        "demoUrl": "https://alpine-haven.vercel.app/",
+        "githubUrl": ""
+    },
+    {
+        "id": "subtrack",
+        "name": "SubTrack",
+        "category": "Subscription management",
+        "description": "Know what renews next. A home for subscriptions, spending insights, and timely renewal reminders.",
+        "stack": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Upstash"
+        ],
+        "details": [
+            "React dashboards and RESTful APIs for subscription management and spending analytics.",
+            "Google OAuth, JWT authentication, OTP verification, and password recovery, with Arcjet protection and rate limiting.",
+            "Scheduled renewal emails using Upstash Workflows and Nodemailer."
+        ],
+        "featured": true,
+        "artwork": "subtrack",
+        "icon": "react",
+        "image": "/Subtrack.png",
+        "imageAlt": "Screenshot of SubTrack project",
+        "demoUrl": "",
+        "githubUrl": ""
+    },
+    {
+        "id": "gym",
+        "name": "Better Gym",
+        "category": "AI-powered fitness app",
+        "description": "Make every rep count. A mobile fitness app that uses real-time pose detection to assess exercise form.",
+        "stack": ["Flutter", "Dart", "ML Kit", "Python", "PyTorch"],
+        "details": [
+            "Real-time repetition counting and exercise form assessment using Google ML Kit and BlazePose.",
+            "Adapted and trained a 2s-AGCN model in PyTorch to classify correct and incorrect exercise form.",
+            "Achieved 98.46% classification accuracy in the project's model evaluation; PHP and MySQL support the application."
+        ],
+        "featured": true,
+        "artwork": "gym",
+        "icon": "flutter",
+        "image": "",
+        "imageAlt": "",
+        "demoUrl": "",
+        "githubUrl": ""
+    }
+]

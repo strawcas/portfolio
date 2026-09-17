@@ -30,18 +30,18 @@ import styles from "./Skillset.module.css";
 const groups = [
     {
         name: "Languages",
-        note: "The foundations",
         items: [
             ["JavaScript", SiJavascript, "#ead66b"],
             ["PHP", SiPhp, "#aaa3dc"],
             ["Python", SiPython, "#81b6db"],
             ["Dart", SiDart, "#6cd1dc"],
             ["C#", TbBrandCSharp, "#b89be8"],
+            ["HTML", SiHtml5, "#ed9b83"],
+            ["CSS", FaCss3Alt, "#8eb9f1"],
         ],
     },
     {
-        name: "Frameworks & libraries",
-        note: "From web to mobile",
+        name: "Frameworks",
         items: [
             ["React", SiReact, "#8bd5ec"],
             ["Next.js", SiNextdotjs, "#eeeaf6"],
@@ -49,21 +49,12 @@ const groups = [
             ["Express.js", SiExpress, "#d7d2e3"],
             ["Flutter", SiFlutter, "#7bc8ee"],
             ["CodeIgniter", SiCodeigniter, "#ed9b83"],
-        ],
-    },
-    {
-        name: "Interface",
-        note: "What people interact with",
-        items: [
-            ["HTML", SiHtml5, "#ed9b83"],
-            ["CSS", FaCss3Alt, "#8eb9f1"],
             ["Tailwind CSS", SiTailwindcss, "#7cd2db"],
             ["jQuery", SiJquery, "#89b7de"],
         ],
     },
     {
-        name: "Databases & platforms",
-        note: "Behind the application",
+        name: "Databases & Platforms",
         items: [
             ["MongoDB", SiMongodb, "#97cc95"],
             ["MySQL", SiMysql, "#8dbdd9"],
@@ -74,8 +65,7 @@ const groups = [
         ],
     },
     {
-        name: "Tools & deployment",
-        note: "From development to delivery",
+        name: "Tools",
         items: [
             ["Git", SiGit, "#ed9b83"],
             ["Docker", SiDocker, "#8eb9f1"],
@@ -99,35 +89,19 @@ export default function Skillset() {
                 </div>
                 <header className={styles.header}>
                     <div>
-                        <p className={styles.eyebrow}>
-                            <span /> My toolkit
-                        </p>
                         <h2 id="skills-heading">
                             The tech <span>behind it.</span>
                         </h2>
                     </div>
-                    <p className={styles.intro}>
-                        The languages, frameworks, and tools
-                        <br />I use to bring ideas to life.
-                    </p>
                 </header>
                 <div className={styles.groups}>
-                    {groups.map((group, index) => (
+                    {groups.map((group) => (
                         <div
                             className={styles.group}
                             key={group.name}
                         >
                             <div className={styles.groupHeading}>
-                                <span
-                                    className={styles.number}
-                                    aria-hidden="true"
-                                >
-                                    0{index + 1}
-                                </span>
-                                <div>
-                                    <h3>{group.name}</h3>
-                                    <p>{group.note}</p>
-                                </div>
+                                <h3>{group.name}</h3>
                             </div>
                             <ul
                                 className={styles.icons}

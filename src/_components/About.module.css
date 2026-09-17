@@ -3,8 +3,8 @@
     isolation: isolate;
     overflow: hidden;
     padding: 32px 32px 112px;
-    background: linear-gradient(#0b0b17, #0b0a1c);
-    color: #f3f0fa;
+    background: var(--portfolio-background);
+    color: var(--portfolio-text);
     font-family: var(--font-geist-sans), sans-serif;
 }
 
@@ -13,7 +13,11 @@
     position: absolute;
     z-index: -1;
     inset: 15% 35% 0 -20%;
-    background: radial-gradient(ellipse, #9a75c712, transparent 65%);
+    background: radial-gradient(
+        ellipse,
+        rgb(var(--portfolio-accent-rgb) / 0.025),
+        transparent 65%
+    );
     pointer-events: none;
 }
 
@@ -28,7 +32,7 @@
     justify-content: space-between;
     border-top: 1px solid #ffffff1c;
     padding-top: 24px;
-    color: #bda9dd;
+    color: var(--portfolio-accent);
     font:
         11px var(--font-geist-mono),
         monospace;
@@ -46,12 +50,12 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #c5a2ff;
-    box-shadow: 0 0 16px #aa7af0;
+    background: var(--portfolio-accent);
+    box-shadow: 0 0 16px rgb(var(--portfolio-accent-rgb) / 0.3);
 }
 
 .sectionLabel > span {
-    color: #9b8aaf;
+    color: var(--portfolio-subtle);
 }
 
 .layout {
@@ -78,7 +82,7 @@
     position: absolute;
     z-index: -1;
     inset: 14px -14px -14px 14px;
-    border: 1px solid #baa4df45;
+    border: 1px solid rgb(var(--portfolio-accent-rgb) / 0.271);
     border-radius: 16px;
 }
 
@@ -99,7 +103,7 @@
     position: absolute;
     top: -24px;
     right: -26px;
-    color: #d6bee9;
+    color: var(--portfolio-text-soft);
     font-size: 64px;
     line-height: 1;
     text-shadow: 0 2px 20px #0b0a1c50;
@@ -117,11 +121,11 @@
 }
 
 .caption span:first-child {
-    color: #d7cde1;
+    color: var(--portfolio-text-soft);
 }
 
 .caption span:last-child {
-    color: #a39aac;
+    color: var(--portfolio-muted);
 }
 
 .content {
@@ -136,12 +140,12 @@
 }
 
 .heading h2 span {
-    color: #baa4df;
+    color: var(--portfolio-accent);
 }
 
 .bio {
     margin-top: 28px;
-    color: #aaa3b8;
+    color: var(--portfolio-muted);
     font-size: 15px;
     line-height: 1.85;
 }
@@ -151,7 +155,7 @@
 }
 
 .bio .greeting {
-    color: #e8e1ef;
+    color: var(--portfolio-text-soft);
     font-size: 21px;
     font-weight: 500;
     letter-spacing: -0.025em;
@@ -167,14 +171,14 @@
 }
 
 .approach dt {
-    color: #ddd4e8;
+    color: var(--portfolio-text-soft);
     font-size: 13px;
     font-weight: 500;
 }
 
 .approach dt span {
     margin-right: 8px;
-    color: #aa91c8;
+    color: var(--portfolio-subtle);
     font:
         10px var(--font-geist-mono),
         monospace;
@@ -182,7 +186,7 @@
 
 .approach dd {
     margin-top: 10px;
-    color: #a59baf;
+    color: var(--portfolio-muted);
     font-size: 12px;
     line-height: 1.8;
 }
@@ -213,30 +217,30 @@
 }
 
 .links a:focus-visible {
-    outline: 2px solid #d7c5ef;
+    outline: 2px solid var(--portfolio-accent);
     outline-offset: 5px;
     border-radius: 24px;
 }
 
 .primaryLink {
     padding: 12px 22px;
-    border: 1px solid #c1a1e64d;
+    border: 1px solid rgb(var(--portfolio-accent-rgb) / 0.302);
     border-radius: 28px;
-    background: #bca0ec0c;
-    color: #e5d5f6;
+    background: rgb(var(--portfolio-accent-rgb) / 0.047);
+    color: var(--portfolio-text-soft);
 }
 
 .primaryLink:hover {
-    background: #bca0ec1c;
-    border-color: #c1a1e680;
+    background: rgb(var(--portfolio-accent-rgb) / 0.11);
+    border-color: rgb(var(--portfolio-accent-rgb) / 0.502);
 }
 
 .secondaryLink {
-    color: #bfb3cd;
+    color: var(--portfolio-accent);
 }
 
 .secondaryLink:hover {
-    color: #f3f0fa;
+    color: var(--portfolio-text);
 }
 
 @media (max-width: 800px) {
