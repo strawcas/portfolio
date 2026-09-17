@@ -48,11 +48,11 @@ export default function MusicPlayer() {
                 </div>
 
                 <div className="text-left">
-                    <p className="text-sm font-medium">Space Song</p>
-
-                    <p className="text-xs text-white/40">
-                        Beach House
+                    <p className="text-sm font-medium">
+                        Can You Hear The Whistle Blow
                     </p>
+
+                    <p className="text-xs text-white/40">缺省</p>
                 </div>
 
                 {isPlaying && (
