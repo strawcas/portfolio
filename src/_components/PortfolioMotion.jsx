@@ -113,7 +113,8 @@ export default function PortfolioMotion({ children }) {
                 const heroContent = select("[data-hero-content]")[0];
                 if (heroSection && heroContent) {
                     gsap.to(heroContent, {
-                        y: () => -Math.min(window.innerHeight * 0.2, 180),
+                        y: () =>
+                            -Math.min(window.innerHeight * 0.2, 180),
                         autoAlpha: 0,
                         ease: "none",
                         scrollTrigger: {
@@ -126,7 +127,9 @@ export default function PortfolioMotion({ children }) {
                     });
                 }
 
-                const hero = select("[data-hero-content] h1, [data-hero-content] p");
+                const hero = select(
+                    "[data-hero-content] h1, [data-hero-content] p",
+                );
                 if (hero.length) {
                     gsap.from(hero, {
                         y: 22,
@@ -301,18 +304,6 @@ export default function PortfolioMotion({ children }) {
             >
                 <div className={motion.progress} aria-hidden="true" />
                 {children}
-                <button
-                    type="button"
-                    className={motion.control}
-                    onClick={() => setEnabled((value) => !value)}
-                    aria-pressed={!enabled}
-                    aria-label="Pause animations"
-                >
-                    <span aria-hidden="true">
-                        {enabled ? "Ⅱ" : "▷"}
-                    </span>
-                    {enabled ? "Pause motion" : "Resume motion"}
-                </button>
             </div>
         </MotionEnabledContext.Provider>
     );

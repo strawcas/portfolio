@@ -23,14 +23,14 @@ export default function MusicPlayer() {
     }
 
     return (
-        <div className="fixed bottom-6 left-6 z-50">
+        <div className="fixed right-4 bottom-4 left-4 z-50 sm:right-auto sm:bottom-6 sm:left-6">
             <audio ref={audioRef} src="/song.mp3" loop />
 
             <button
                 onClick={handlePlay}
-                className="group flex items-center gap-3 rounded-xl border border-white/10 bg-[#080918]/80 p-2 pr-4 text-white shadow-xl backdrop-blur-xl transition hover:border-white/20 hover:bg-[#0d0e22]"
+                className="group flex w-full items-center gap-2 rounded-xl border border-white/10 bg-[#080918]/80 p-2 text-white shadow-xl backdrop-blur-xl transition hover:border-white/20 hover:bg-[#0d0e22] sm:w-auto sm:gap-3 sm:pr-4"
             >
-                <div className="relative h-12 w-12 overflow-hidden rounded-lg">
+                <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg sm:h-12 sm:w-12">
                     <Image
                         src="/song_image.jpg"
                         alt="Album cover"
@@ -47,16 +47,18 @@ export default function MusicPlayer() {
                     </div>
                 </div>
 
-                <div className="text-left">
-                    <p className="text-sm font-medium">
+                <div className="min-w-0 flex-1 text-left sm:flex-none">
+                    <p className="truncate text-xs font-medium sm:max-w-[230px] sm:text-sm">
                         Can You Hear The Whistle Blow
                     </p>
 
-                    <p className="text-xs text-white/40">缺省</p>
+                    <p className="truncate text-[11px] text-white/40 sm:text-xs">
+                        缺省
+                    </p>
                 </div>
 
                 {isPlaying && (
-                    <div className="ml-3 flex h-5 items-end gap-[2px]">
+                    <div className="ml-1 flex h-5 shrink-0 items-end gap-[2px] sm:ml-3">
                         <span className="h-2 w-[2px] animate-pulse bg-white" />
                         <span className="h-4 w-[2px] animate-pulse bg-white" />
                         <span className="h-3 w-[2px] animate-pulse bg-white" />
