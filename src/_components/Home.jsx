@@ -102,7 +102,7 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <MagneticButton>
+                        <MagneticButton href="#projects">
                             Explore my work
                             <HiArrowUpRight
                                 aria-hidden="true"

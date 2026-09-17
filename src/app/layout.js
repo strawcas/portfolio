@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import MusicPlayer from "@/_components/MusicPlayer";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         >
             <body className="min-h-full flex flex-col">
                 {children}
+                <MusicPlayer />
             </body>
         </html>
     );

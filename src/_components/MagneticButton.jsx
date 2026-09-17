@@ -3,9 +3,9 @@
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 
-export default function MagneticButton({ children }) {
+export default function MagneticButton({ children, href }) {
     const magneticZoneRef = useRef(null);
-    const exploreButtonRef = useRef(null);
+    const buttonRef = useRef(null);
     const magnetStrength = 0.4;
 
     useEffect(() => {
@@ -15,7 +15,7 @@ export default function MagneticButton({ children }) {
             "(min-width: 1024px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)",
             () => {
                 const zone = magneticZoneRef.current;
-                const button = exploreButtonRef.current;
+                const button = buttonRef.current;
                 let tween;
 
                 gsap.set(button, { x: 0, y: 0 });
@@ -94,13 +94,13 @@ export default function MagneticButton({ children }) {
             ref={magneticZoneRef}
             className="mt-8 flex w-fit max-w-full items-center justify-center lg:aspect-square lg:w-[22rem] lg:rounded-full lg:border lg:border-white/15"
         >
-            <button
-                ref={exploreButtonRef}
-                type="button"
-                className="relative isolate inline-flex shrink-0 cursor-pointer items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-[#040517] transition-colors duration-150 hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white active:bg-slate-300 motion-reduce:transition-none before:pointer-events-none before:absolute before:-inset-x-12 before:-inset-y-16 before:z-[-1] before:content-[''] before:bg-[radial-gradient(ellipse_at_center,rgb(170_163_225/22%)_0%,rgb(139_130_205/10%)_35%,transparent_70%)]"
+            <a
+                ref={buttonRef}
+                href={href}
+                className="relative isolate inline-flex shrink-0 cursor-pointer items-center gap-3 rounded-full bg-white px-7 py-3.5 text-sm font-medium text-[#040517] transition-colors duration-150 hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white active:bg-slate-300 motion-reduce:transition-none before:pointer-events-none before:absolute before:-inset-x-12 before:-inset-y-16 before:z-[-1] before:bg-[radial-gradient(ellipse_at_center,rgb(170_163_225/22%)_0%,rgb(139_130_205/10%)_35%,transparent_70%)] before:content-['']"
             >
                 {children}
-            </button>
+            </a>
         </div>
     );
 }
