@@ -45,9 +45,6 @@ export default function Experience() {
                             <time dateTime="2025-06">June</time> —{" "}
                             <time dateTime="2025-08">August</time>
                         </p>
-                        <span className={styles.label}>
-                            Traineeship
-                        </span>
                     </div>
                     <div className={styles.details}>
                         <div className={styles.companyRow}>

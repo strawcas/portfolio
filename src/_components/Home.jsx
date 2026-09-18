@@ -83,7 +83,7 @@ export default function Home() {
                 >
                     <div
                         data-hero-content
-                        className="flex min-h-[calc(100svh-14rem)] w-full flex-col items-center justify-center py-10 sm:min-h-[calc(100svh-16rem)]"
+                        className="flex min-h-[calc(100svh-14rem)] w-full flex-col items-center justify-center py-10 sm:min-h-[calc(100svh-16rem)] pb-44 sm:pb-10"
                     >
                         <div className="relative isolate flex w-full flex-col items-center">
                             <h1

@@ -1,9 +1,13 @@
 const links = [
-    { href: "#skills", label: "SKILLSET" },
-    { href: "#experience", label: "EXPERIENCE" },
-    { href: "#projects", label: "PROJECTS" },
-    { href: "#about", label: "ABOUT-ME" },
-    { href: "#contact", label: "CONTACT" },
+    { href: "#skills", label: "SKILLSET", isVisibleSmall: false },
+    {
+        href: "#experience",
+        label: "EXPERIENCE",
+        isVisibleSmall: true,
+    },
+    { href: "#projects", label: "PROJECTS", isVisibleSmall: true },
+    { href: "#about", label: "ABOUT-ME", isVisibleSmall: true },
+    { href: "#contact", label: "CONTACT", isVisibleSmall: true },
 ];
 
 export default function Navigation({ floating = false }) {
@@ -19,8 +23,11 @@ export default function Navigation({ floating = false }) {
             }
         >
             <ul className="mx-auto flex w-fit max-w-full flex-wrap items-center justify-center gap-x-4 gap-y-1 rounded-2xl border border-white/10 bg-white/[0.03] px-3 py-1 text-[11px] text-white/80 backdrop-blur-md sm:gap-x-6 sm:px-6 sm:text-sm xl:flex-nowrap xl:gap-x-8 xl:rounded-full [&_a]:inline-flex [&_a]:min-h-11 [&_a]:items-center">
-                {links.map(({ href, label }) => (
-                    <li key={href}>
+                {links.map(({ href, label, isVisibleSmall }) => (
+                    <li
+                        key={href}
+                        className={`${!isVisibleSmall && "hidden"} min-[420px]:block`}
+                    >
                         <a
                             href={href}
                             className="transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
