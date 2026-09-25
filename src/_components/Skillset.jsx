@@ -1,5 +1,6 @@
 import {
     SiJavascript,
+    SiTypescript,
     SiPhp,
     SiPython,
     SiDart,
@@ -32,6 +33,7 @@ const groups = [
         name: "Languages",
         items: [
             ["JavaScript", SiJavascript, "#ead66b"],
+            ["TypeScript", SiTypescript, "#8eb9f1"],
             ["PHP", SiPhp, "#aaa3dc"],
             ["Python", SiPython, "#81b6db"],
             ["Dart", SiDart, "#6cd1dc"],

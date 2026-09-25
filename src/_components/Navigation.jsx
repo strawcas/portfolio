@@ -18,7 +18,7 @@ export default function Navigation({ floating = false }) {
             }
             className={
                 floating
-                    ? "fixed bottom-28 left-1/2 z-50 hidden w-max max-w-[calc(100%-2rem)] -translate-x-1/2 md:block xl:bottom-6"
+                    ? "fixed bottom-[var(--floating-navigation-bottom)] left-1/2 z-50 hidden w-max max-w-[calc(100%-2rem)] -translate-x-1/2 md:block"
                     : "order-last w-full xl:absolute xl:left-1/2 xl:order-none xl:w-auto xl:-translate-x-1/2"
             }
         >

@@ -11,6 +11,45 @@
     --portfolio-subtle: #8e92a6;
     --portfolio-accent: #b8bacd;
     --portfolio-accent-rgb: 184 186 205;
+
+    /* Reserve room beneath page content for the fixed controls. */
+    --floating-control-bottom: max(
+        1rem,
+        env(safe-area-inset-bottom, 0px)
+    );
+    --music-player-clearance: calc(
+        var(--floating-control-bottom) + 3.625rem + 1.5rem
+    );
+    --floating-navigation-bottom: var(--music-player-clearance);
+    --footer-clearance: var(--music-player-clearance);
+}
+
+@media (min-width: 40rem) {
+    :root {
+        --floating-control-bottom: max(
+            1.5rem,
+            env(safe-area-inset-bottom, 0px)
+        );
+        --music-player-clearance: calc(
+            var(--floating-control-bottom) + 4.125rem + 1.5rem
+        );
+    }
+}
+
+@media (min-width: 48rem) {
+    :root {
+        /* The tablet navigation sits above the player: 54px tall plus a gap. */
+        --footer-clearance: calc(
+            var(--floating-navigation-bottom) + 3.375rem + 1.5rem
+        );
+    }
+}
+
+@media (min-width: 80rem) {
+    :root {
+        --floating-navigation-bottom: var(--floating-control-bottom);
+        --footer-clearance: var(--music-player-clearance);
+    }
 }
 
 @theme inline {

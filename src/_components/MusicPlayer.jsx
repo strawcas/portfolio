@@ -23,7 +23,7 @@ export default function MusicPlayer() {
     }
 
     return (
-        <div className="fixed right-4 bottom-4 left-4 z-50 sm:right-auto sm:bottom-6 sm:left-6">
+        <div className="fixed right-4 bottom-[var(--floating-control-bottom)] left-4 z-50 sm:right-auto sm:left-6">
             <audio ref={audioRef} src="/song.mp3" loop />
 
             <button

@@ -473,6 +473,7 @@
 .archive {
     flex: 1;
     padding-top: 26px;
+    padding-bottom: var(--music-player-clearance);
     background:
         radial-gradient(
             ellipse at 80% 0,
@@ -576,6 +577,7 @@
     }
     .archive {
         padding-top: 20px;
+        padding-bottom: var(--music-player-clearance);
     }
     .archiveHeading {
         margin-top: 30px;
