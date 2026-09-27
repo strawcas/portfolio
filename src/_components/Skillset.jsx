@@ -8,6 +8,7 @@ import {
     SiNextdotjs,
     SiNodedotjs,
     SiExpress,
+    SiSocketdotio,
     SiFlutter,
     SiCodeigniter,
     SiMongodb,
@@ -43,12 +44,13 @@ const groups = [
         ],
     },
     {
-        name: "Frameworks",
+        name: "Frameworks & Libraries",
         items: [
             ["React", SiReact, "#8bd5ec"],
             ["Next.js", SiNextdotjs, "#eeeaf6"],
             ["Node.js", SiNodedotjs, "#98c886"],
             ["Express.js", SiExpress, "#d7d2e3"],
+            ["Socket.IO", SiSocketdotio, "#eeeaf6"],
             ["Flutter", SiFlutter, "#7bc8ee"],
             ["CodeIgniter", SiCodeigniter, "#ed9b83"],
             ["Tailwind CSS", SiTailwindcss, "#7cd2db"],
