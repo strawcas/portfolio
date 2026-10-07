@@ -5,9 +5,9 @@ import ProjectCard from "./ProjectCard";
 import styles from "./Projects.module.css";
 
 export default function Projects() {
-    const featuredProjects = projects.filter(
-        (project) => project.featured,
-    );
+    const featuredProjects = projects
+        .filter((project) => project.featured)
+        .slice(0, 3);
 
     return (
         <section
@@ -25,7 +25,7 @@ export default function Projects() {
                 <header className={styles.heading}>
                     <div>
                         <h2 id="projects-heading">
-                            Selected <span>projects.</span>
+                            <span>Projects.</span>
                         </h2>
                     </div>
                 </header>

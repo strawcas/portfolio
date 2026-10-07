@@ -1,5 +1,32 @@
 [
     {
+        "id": "applyflow",
+        "name": "Apply Flow",
+        "category": "Job application management",
+        "description": "Keep your next opportunity in sight. A job application tracker with status dashboards, interview scheduling, and deadline management.",
+        "stack": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Supabase",
+            "PostgreSQL",
+            "Drizzle ORM"
+        ],
+        "details": [
+            "Application management with company and role search, status filtering, and dashboards for tracking progress.",
+            "Month and agenda calendar views for interviews, follow-ups, and reminders, with automatic application deadlines.",
+            "Google OAuth through Supabase Auth, email confirmation, account preferences, and CSV and iCalendar exports."
+        ],
+        "featured": true,
+        "artwork": "applyflow",
+        "icon": "nextjs",
+        "image": "ApplyFlow.png",
+        "imageAlt": "",
+        "demoUrl": "https://applyflow.strawcas.online",
+        "githubUrl": ""
+    },
+    {
         "id": "alpine",
         "name": "Alpine Haven",
         "category": "Full-stack booking platform",

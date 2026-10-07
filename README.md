@@ -3,9 +3,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Adding projects
 
 Edit `src/_data/projects.json`. Every object in this array renders a card on
-`/projects`, in the same order as the file. Set `"featured": true` to also show a
-project in the homepage's Selected projects section. The existing three projects
-have been moved into this file; no new project content is required in JSX.
+`/projects`, in the same order as the file. Set `"featured": true` to include a
+project in the homepage's Projects section, which shows only the first three
+featured entries in file order. No new project content is required in JSX.
 
 Copy this template into the array and replace its values (use a unique `id`):
 
