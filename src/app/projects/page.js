@@ -21,18 +21,10 @@ export default function ProjectsPage() {
                     className={`${styles.heading} ${styles.archiveHeading}`}
                 >
                     <div>
-                        <p className={styles.eyebrow}>
-                            The project collection
-                        </p>
                         <h1>
                             All <span>projects.</span>
                         </h1>
                     </div>
-                    <p className={styles.intro}>
-                        An ongoing collection of ideas,
-                        <br />
-                        experiments, and things I&apos;ve built.
-                    </p>
                 </header>
                 <div className={styles.collectionMeta}>
                     <span>
@@ -41,7 +33,6 @@ export default function ProjectsPage() {
                             ? "project"
                             : "projects"}
                     </span>
-                    <span>Always building. Always learning.</span>
                 </div>
                 {projects.length > 0 ? (
                     <div

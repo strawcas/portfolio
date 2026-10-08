@@ -21,7 +21,7 @@
         "featured": true,
         "artwork": "applyflow",
         "icon": "nextjs",
-        "image": "ApplyFlow.png",
+        "image": "/ApplyFlow.png",
         "imageAlt": "",
         "demoUrl": "https://applyflow.strawcas.online",
         "githubUrl": ""
