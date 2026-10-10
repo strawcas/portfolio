@@ -11,12 +11,14 @@
             "Tailwind CSS",
             "Supabase",
             "PostgreSQL",
-            "Drizzle ORM"
+            "Drizzle ORM",
+            "Vercel"
         ],
         "details": [
             "Application management with company and role search, status filtering, and dashboards for tracking progress.",
             "Month and agenda calendar views for interviews, follow-ups, and reminders, with automatic application deadlines.",
-            "Google OAuth through Supabase Auth, email confirmation, account preferences, and CSV and iCalendar exports."
+            "Google OAuth through Supabase Auth, email confirmation, account preferences, and CSV and iCalendar exports.",
+            "Deployed on Vercel."
         ],
         "featured": true,
         "artwork": "applyflow",
@@ -34,14 +36,17 @@
         "stack": [
             "Next.js",
             "React",
+            "JavaScript",
             "Tailwind CSS",
             "Supabase",
-            "NextAuth.js"
+            "PostgreSQL",
+            "Vercel"
         ],
         "details": [
             "Cabin filtering, date selection, and reservation management.",
-            "Google OAuth, session management, and authorization for guest accounts and reservations.",
-            "React Server Components and server actions backed by Supabase PostgreSQL."
+            "Google OAuth through NextAuth.js, session management, and authorization for guest accounts and reservations.",
+            "React Server Components and server actions backed by Supabase PostgreSQL.",
+            "Deployed on Vercel."
         ],
         "featured": true,
         "artwork": "alpine",
@@ -59,21 +64,25 @@
         "stack": [
             "React",
             "Node.js",
-            "Express",
+            "Express.js",
             "MongoDB",
-            "Upstash"
+            "Upstash Workflows",
+            "Docker",
+            "GitHub Actions",
+            "Cloudflare Tunnel"
         ],
         "details": [
             "React dashboards and RESTful APIs for subscription management and spending analytics.",
             "Google OAuth, JWT authentication, OTP verification, and password recovery, with Arcjet protection and rate limiting.",
-            "Scheduled renewal emails using Upstash Workflows and Nodemailer."
+            "Scheduled renewal emails using Upstash Workflows and Nodemailer.",
+            "Self-hosted on a repurposed PC running Ubuntu with Docker and Cloudflare Tunnel, with GitHub Actions automating tests, image publishing, and deployment with health checks and rollback."
         ],
         "featured": true,
         "artwork": "subtrack",
         "icon": "react",
         "image": "/Subtrack.png",
         "imageAlt": "Screenshot of SubTrack project",
-        "demoUrl": "",
+        "demoUrl": "https://subtrack.strawcas.online",
         "githubUrl": ""
     },
     {
@@ -93,6 +102,53 @@
         "image": "",
         "imageAlt": "",
         "demoUrl": "",
+        "githubUrl": ""
+    },
+    {
+        "id": "ccsmerch",
+        "name": "CCS Merch",
+        "category": "Full-stack e-commerce platform",
+        "description": "Wear your community. A merchandise storefront with product discovery, checkout, and tools for managing inventory and sales.",
+        "stack": [
+            "PHP",
+            "MySQL",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Docker",
+            "GitHub Actions",
+            "Cloudflare Tunnel"
+        ],
+        "details": [
+            "Product browsing, variation selection, and cart checkout with stock validation, payment receipt uploads, and downloadable order receipts.",
+            "Admin dashboards for product management, inventory, and sales, with authenticated access, CSRF protection, and private payment receipt review.",
+            "Self-hosted on a repurposed PC running Ubuntu with Docker and Cloudflare Tunnel, with GitHub Actions automating tests, image publishing, and deployment with health checks and rollback."
+        ],
+        "featured": true,
+        "artwork": "ccsmerch",
+        "icon": "php",
+        "image": "/ccs-merch-site.png",
+        "imageAlt": "Screenshot of the CCS Merch storefront",
+        "demoUrl": "https://merch.strawcas.online",
+        "githubUrl": ""
+    },
+    {
+        "id": "oldportfolio",
+        "name": "Old Portfolio",
+        "category": "Personal portfolio",
+        "description": "My old personal portfolio that I used before my internship, built with Three.js.",
+        "stack": ["Three.js", "JavaScript", "HTML", "CSS", "Netlify"],
+        "details": [
+            "Built using Three.js.",
+            "Used to showcase my projects and skills before my internship.",
+            "Deployed on Netlify."
+        ],
+        "featured": false,
+        "artwork": "oldportfolio",
+        "icon": "threejs",
+        "image": "/old-portfolio.png",
+        "imageAlt": "Screenshot of my old portfolio",
+        "demoUrl": "https://portofolio-joseph-gabriel.netlify.app/",
         "githubUrl": ""
     }
 ]

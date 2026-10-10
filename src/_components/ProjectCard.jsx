@@ -6,7 +6,13 @@ import {
     HiMinus,
     HiPlus,
 } from "react-icons/hi2";
-import { SiFlutter, SiNextdotjs, SiReact } from "react-icons/si";
+import {
+    SiFlutter,
+    SiNextdotjs,
+    SiPhp,
+    SiReact,
+    SiThreedotjs,
+} from "react-icons/si";
 import ProjectArt from "./ProjectArt";
 import styles from "./Projects.module.css";
 
@@ -14,6 +20,8 @@ const icons = {
     nextjs: SiNextdotjs,
     react: SiReact,
     flutter: SiFlutter,
+    php: SiPhp,
+    threejs: SiThreedotjs,
 };
 
 export default function ProjectCard({

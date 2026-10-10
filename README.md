@@ -33,8 +33,10 @@ Copy this template into the array and replace its values (use a unique `id`):
   Leave `image` empty for the default cover; no image or icon imports are needed.
 - Set `demoUrl` and/or `githubUrl` to full HTTPS URLs to show those links. Leave
   them empty or omit them to hide the buttons.
-- The optional `icon` accepts `nextjs`, `react`, or `flutter`, with a generic code
-  icon as the default. The existing projects also use optional `artwork` values
+- The optional `icon` accepts `nextjs`, `react`, `flutter`, `php`, or `threejs`,
+  with a generic code icon as the default. These icons are included in the
+  installed `react-icons` package; no separate icon files are needed.
+  The existing projects also use optional `artwork` values
   `alpine`, `subtrack`, and `gym` to retain their illustrations. Omit `artwork` on
   new entries to use the default cover. An `image` takes priority over `artwork`.
 - Card numbers and the project count are automatic. An empty array (`[]`) shows
