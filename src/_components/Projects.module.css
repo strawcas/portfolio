@@ -96,29 +96,17 @@
     align-items: start;
 }
 .card {
-    --accent: var(--portfolio-accent);
     min-width: 0;
     border: 1px solid #ffffff16;
     border-radius: 20px;
     overflow: hidden;
     background: var(--portfolio-surface);
 }
-.featured {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    --accent: #b7d9c3;
-}
 .visual {
     position: relative;
     overflow: hidden;
     height: 300px;
     border-bottom: 1px solid #ffffff0d;
-}
-.featured .visual {
-    height: 100%;
-    min-height: 410px;
-    border-bottom: none;
 }
 .landscape {
     position: absolute;
@@ -151,15 +139,16 @@
     color: var(--portfolio-text);
     background: #10132550;
 }
+.visualIcon svg {
+    width: 18px;
+    height: 18px;
+}
 .content {
     padding: 32px;
     min-width: 0;
 }
-.featured .content {
-    padding: 40px 36px;
-}
 .category {
-    color: var(--accent);
+    color: var(--portfolio-accent);
     font-size: 9px;
 }
 .content h2,
@@ -212,7 +201,7 @@
     display: none;
 }
 .details summary:focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--portfolio-accent);
     outline-offset: 6px;
     border-radius: 3px;
 }
@@ -220,7 +209,7 @@
     margin-left: auto;
     width: 18px;
     height: 18px;
-    color: var(--accent);
+    color: var(--portfolio-accent);
 }
 .minus,
 .details[open] .plus {
@@ -240,7 +229,7 @@
     margin-top: 10px;
 }
 .details li::marker {
-    color: var(--accent);
+    color: var(--portfolio-accent);
 }
 .orbitArt {
     height: 100%;
@@ -322,9 +311,6 @@
     bottom: 22px;
     color: var(--portfolio-accent);
     font-size: 8px;
-}
-.gym {
-    --accent: #cee3ad;
 }
 .gymArt {
     position: relative;
@@ -548,18 +534,10 @@
     font-size: 14px;
 }
 @media (max-width: 760px) {
-    .featured {
-        grid-template-columns: 1fr;
-    }
-    .featured .visual {
-        height: 300px;
-        min-height: 0;
-    }
     .grid {
         gap: 22px;
     }
-    .content,
-    .featured .content {
+    .content {
         padding: 26px;
     }
     .heading {
@@ -594,19 +572,14 @@
     .grid {
         grid-template-columns: 1fr;
     }
-    .featured {
-        grid-column: auto;
-    }
-    .visual,
-    .featured .visual {
+    .visual {
         height: 260px;
     }
     .content h2,
     .content h3 {
         font-size: 30px;
     }
-    .content,
-    .featured .content {
+    .content {
         padding: 26px 22px;
     }
     .endnote {
@@ -656,7 +629,7 @@
             opacity 0.7s;
     }
 
-    .subtrack:hover .orbitInner {
+    .card:hover .orbitInner {
         transform: rotate(15deg);
     }
     .gymArt::after {
@@ -671,7 +644,7 @@
         box-shadow: 0 0 18px #c9ef9860;
         opacity: 0;
     }
-    .gym:hover .gymArt::after {
+    .card:hover .gymArt::after {
         animation: scan 1.8s ease-in-out;
     }
     @keyframes scan {

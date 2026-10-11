@@ -8,6 +8,7 @@ import {
 } from "react-icons/hi2";
 import {
     SiFlutter,
+    SiJavascript,
     SiNextdotjs,
     SiPhp,
     SiReact,
@@ -22,12 +23,12 @@ const icons = {
     flutter: SiFlutter,
     php: SiPhp,
     threejs: SiThreedotjs,
+    javascript: SiJavascript,
 };
 
 export default function ProjectCard({
     project,
     index,
-    featured = false,
     headingLevel = "h3",
 }) {
     const {
@@ -49,7 +50,7 @@ export default function ProjectCard({
 
     return (
         <article
-            className={`${styles.card} ${styles[artwork] || ""} ${featured ? styles.featured : ""}`}
+            className={styles.card}
             aria-labelledby={`${id}-heading`}
         >
             <div className={styles.visual}>

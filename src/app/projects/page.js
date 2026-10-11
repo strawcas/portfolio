@@ -26,14 +26,7 @@ export default function ProjectsPage() {
                         </h1>
                     </div>
                 </header>
-                <div className={styles.collectionMeta}>
-                    <span>
-                        {String(projects.length).padStart(2, "0")}{" "}
-                        {projects.length === 1
-                            ? "project"
-                            : "projects"}
-                    </span>
-                </div>
+                <br />
                 {projects.length > 0 ? (
                     <div
                         className={`${styles.grid} ${styles.archiveGrid}`}

@@ -87,7 +87,7 @@
     },
     {
         "id": "gym",
-        "name": "Better Gym",
+        "name": "BetterGym",
         "category": "AI-powered fitness app",
         "description": "Make every rep count. A mobile fitness app that uses real-time pose detection to assess exercise form.",
         "stack": ["Flutter", "Dart", "ML Kit", "Python", "PyTorch"],
@@ -99,10 +99,10 @@
         "featured": true,
         "artwork": "gym",
         "icon": "flutter",
-        "image": "",
+        "image": "/bettergym.png",
         "imageAlt": "",
         "demoUrl": "",
-        "githubUrl": ""
+        "githubUrl": "https://github.com/strawcas/bettergym"
     },
     {
         "id": "ccsmerch",
@@ -149,6 +149,94 @@
         "image": "/old-portfolio.png",
         "imageAlt": "Screenshot of my old portfolio",
         "demoUrl": "https://portofolio-joseph-gabriel.netlify.app/",
+        "githubUrl": ""
+    },
+    {
+        "id": "fast-react-pizza",
+        "name": "Fast React Pizza",
+        "category": "Pizza ordering app",
+        "description": "Order your next slice. A pizza ordering app with menu browsing, cart management, and order status tracking.",
+        "stack": [
+            "React",
+            "JavaScript",
+            "React Router",
+            "Redux Toolkit",
+            "React Redux",
+            "Tailwind CSS",
+            "REST APIs",
+            "Vite"
+        ],
+        "details": [
+            "Browse pizzas, manage cart quantities, and place orders with optional priority delivery.",
+            "Look up orders by ID to view their status, pricing, and estimated delivery time.",
+            "Use browser geolocation and reverse geocoding to fill in delivery addresses.",
+            "Manage cart state with Redux Toolkit and load and submit order data through React Router loaders and actions.",
+            "Built as part of Jonas Schmedtmann's Ultimate React course."
+        ],
+        "featured": false,
+        "artwork": "",
+        "icon": "react",
+        "image": "/fast-react-pizza.png",
+        "imageAlt": "",
+        "demoUrl": "https://fast-react-pizza-tawny-zeta.vercel.app/",
+        "githubUrl": ""
+    },
+    {
+        "id": "worldwise",
+        "name": "WorldWise",
+        "category": "Travel tracking app",
+        "description": "Keep your travels on the map. A travel journal for recording visited cities, trip dates, and personal notes.",
+        "stack": [
+            "React",
+            "JavaScript",
+            "React Router",
+            "Context API",
+            "CSS Modules",
+            "Leaflet",
+            "React Leaflet",
+            "React Datepicker",
+            "JSON Server",
+            "Vite"
+        ],
+        "details": [
+            "Add visited cities from an interactive map with automatic city and country lookup through reverse geocoding.",
+            "Record visit dates and personal notes, browse city and country lists, and delete saved entries.",
+            "Use browser geolocation to center the map on the current location.",
+            "Manage shared state with Context API and useReducer, persist city records through JSON Server, and demonstrate protected routes with a simulated login.",
+            "Built as part of Jonas Schmedtmann's Ultimate React course."
+        ],
+        "featured": false,
+        "artwork": "",
+        "icon": "react",
+        "image": "/worldwise.png",
+        "imageAlt": "",
+        "demoUrl": "https://worldwise-three-mu.vercel.app/",
+        "githubUrl": ""
+    },
+    {
+        "id": "mapty",
+        "name": "Mapty",
+        "category": "Workout tracking app",
+        "description": "Put your workouts on the map. A running and cycling tracker with interactive maps and saved workout history.",
+        "stack": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Leaflet",
+            "OpenStreetMap",
+            "Geolocation API"
+        ],
+        "details": [
+            "Log running and cycling workouts on a map with pace and speed calculations.",
+            "Save workout history in localStorage.",
+            "Built as part of Jonas Schmedtmann's JavaScript course."
+        ],
+        "featured": false,
+        "artwork": "mapty",
+        "icon": "javascript",
+        "image": "/mapty.png",
+        "imageAlt": "",
+        "demoUrl": "https://maptybyjonasandjoseph.netlify.app/",
         "githubUrl": ""
     }
 ]

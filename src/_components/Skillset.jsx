@@ -8,7 +8,6 @@ import {
     SiNextdotjs,
     SiNodedotjs,
     SiExpress,
-    SiSocketdotio,
     SiFlutter,
     SiCodeigniter,
     SiMongodb,
@@ -18,14 +17,14 @@ import {
     SiSupabase,
     SiAppwrite,
     SiGit,
+    SiGithubactions,
     SiDocker,
     SiCloudflare,
     SiVercel,
     SiTailwindcss,
     SiHtml5,
-    SiJquery,
 } from "react-icons/si";
-import { FaAws, FaCss3Alt } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import styles from "./Skillset.module.css";
 
@@ -33,8 +32,8 @@ const groups = [
     {
         name: "Languages",
         items: [
-            ["JavaScript", SiJavascript, "#ead66b"],
             ["TypeScript", SiTypescript, "#8eb9f1"],
+            ["JavaScript", SiJavascript, "#ead66b"],
             ["PHP", SiPhp, "#aaa3dc"],
             ["Python", SiPython, "#81b6db"],
             ["Dart", SiDart, "#6cd1dc"],
@@ -46,15 +45,13 @@ const groups = [
     {
         name: "Frameworks & Libraries",
         items: [
-            ["React", SiReact, "#8bd5ec"],
+            ["React.js", SiReact, "#8bd5ec"],
             ["Next.js", SiNextdotjs, "#eeeaf6"],
             ["Node.js", SiNodedotjs, "#98c886"],
             ["Express.js", SiExpress, "#d7d2e3"],
-            ["Socket.IO", SiSocketdotio, "#eeeaf6"],
             ["Flutter", SiFlutter, "#7bc8ee"],
             ["CodeIgniter", SiCodeigniter, "#ed9b83"],
             ["Tailwind CSS", SiTailwindcss, "#7cd2db"],
-            ["jQuery", SiJquery, "#89b7de"],
         ],
     },
     {
@@ -72,8 +69,8 @@ const groups = [
         name: "Tools",
         items: [
             ["Git", SiGit, "#ed9b83"],
+            ["GitHub Actions", SiGithubactions, "#8eb9f1"],
             ["Docker", SiDocker, "#8eb9f1"],
-            ["AWS", FaAws, "#ecc18c"],
             ["Cloudflare", SiCloudflare, "#ecc18c"],
             ["Vercel", SiVercel, "#eeeaf6"],
         ],

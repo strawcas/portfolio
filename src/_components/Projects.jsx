@@ -36,7 +36,6 @@ export default function Projects() {
                                 key={project.id}
                                 project={project}
                                 index={index}
-                                featured={index === 0}
                             />
                         ))}
                     </div>
