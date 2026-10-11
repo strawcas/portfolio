@@ -102,11 +102,21 @@
     overflow: hidden;
     background: var(--portfolio-surface);
 }
+.wide {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+}
 .visual {
     position: relative;
     overflow: hidden;
     height: 300px;
     border-bottom: 1px solid #ffffff0d;
+}
+.wide .visual {
+    height: 100%;
+    min-height: 410px;
+    border-bottom: none;
 }
 .landscape {
     position: absolute;
@@ -146,6 +156,9 @@
 .content {
     padding: 32px;
     min-width: 0;
+}
+.wide .content {
+    padding: 40px 36px;
 }
 .category {
     color: var(--portfolio-accent);
@@ -534,10 +547,18 @@
     font-size: 14px;
 }
 @media (max-width: 760px) {
+    .wide {
+        grid-template-columns: 1fr;
+    }
+    .wide .visual {
+        height: 300px;
+        min-height: 0;
+    }
     .grid {
         gap: 22px;
     }
-    .content {
+    .content,
+    .wide .content {
         padding: 26px;
     }
     .heading {
@@ -572,14 +593,19 @@
     .grid {
         grid-template-columns: 1fr;
     }
-    .visual {
+    .wide {
+        grid-column: auto;
+    }
+    .visual,
+    .wide .visual {
         height: 260px;
     }
     .content h2,
     .content h3 {
         font-size: 30px;
     }
-    .content {
+    .content,
+    .wide .content {
         padding: 26px 22px;
     }
     .endnote {

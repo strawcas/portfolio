@@ -29,6 +29,7 @@ const icons = {
 export default function ProjectCard({
     project,
     index,
+    wide = false,
     headingLevel = "h3",
 }) {
     const {
@@ -50,7 +51,7 @@ export default function ProjectCard({
 
     return (
         <article
-            className={styles.card}
+            className={`${styles.card} ${wide ? styles.wide : ""}`}
             aria-labelledby={`${id}-heading`}
         >
             <div className={styles.visual}>
@@ -59,7 +60,11 @@ export default function ProjectCard({
                         src={image}
                         alt={imageAlt || `${name} preview`}
                         fill
-                        sizes="(max-width: 560px) calc(100vw - 48px), (max-width: 1136px) 50vw, 540px"
+                        sizes={
+                            wide
+                                ? "(max-width: 560px) calc(100vw - 48px), (max-width: 760px) calc(100vw - 64px), (max-width: 1144px) 54vw, 580px"
+                                : "(max-width: 560px) calc(100vw - 48px), (max-width: 1136px) 50vw, 540px"
+                        }
                         className={styles.projectImage}
                         quality={100}
                     />
