@@ -18,10 +18,11 @@
         env(safe-area-inset-bottom, 0px)
     );
     --music-player-clearance: calc(
-        var(--floating-control-bottom) + 3.625rem + 1.5rem
+        var(--floating-control-bottom) + 3.5rem + 1.5rem
     );
     --floating-navigation-bottom: var(--music-player-clearance);
-    --footer-clearance: var(--music-player-clearance);
+    /* Also leave space for the greeting above the chatbot's square button. */
+    --footer-clearance: calc(var(--music-player-clearance) + 3.75rem);
 }
 
 @media (min-width: 40rem) {
@@ -48,7 +49,7 @@
 @media (min-width: 80rem) {
     :root {
         --floating-navigation-bottom: var(--floating-control-bottom);
-        --footer-clearance: var(--music-player-clearance);
+        --footer-clearance: calc(var(--music-player-clearance) + 3.75rem);
     }
 }
 

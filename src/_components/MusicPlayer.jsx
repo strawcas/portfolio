@@ -23,12 +23,16 @@ export default function MusicPlayer() {
     }
 
     return (
-        <div className="fixed right-4 bottom-[var(--floating-control-bottom)] left-4 z-50 sm:right-auto sm:left-6">
+        <div className="fixed bottom-[var(--floating-control-bottom)] left-4 z-50 sm:left-6">
             <audio ref={audioRef} src="/song.mp3" loop />
 
             <button
+                type="button"
                 onClick={handlePlay}
-                className="group flex w-full items-center gap-2 rounded-xl border border-white/10 bg-[#080918]/80 p-2 text-white shadow-xl backdrop-blur-xl transition hover:border-white/20 hover:bg-[#0d0e22] sm:w-auto sm:gap-3 sm:pr-4"
+                aria-label={`${isPlaying ? "Pause" : "Play"} Can You Hear The Whistle Blow`}
+                aria-pressed={isPlaying}
+                title="Can You Hear The Whistle Blow — 缺省"
+                className="group flex h-14 w-14 cursor-pointer items-center justify-center rounded-xl border border-white/10 bg-[#080918]/80 p-1.5 text-white shadow-xl backdrop-blur-xl transition hover:border-white/20 hover:bg-[#0d0e22] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:h-auto sm:w-auto sm:justify-start sm:gap-3 sm:p-2 sm:pr-4"
             >
                 <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg sm:h-12 sm:w-12">
                     <Image
@@ -38,7 +42,7 @@ export default function MusicPlayer() {
                         className="object-cover"
                     />
 
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 transition group-hover:opacity-100">
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/30 transition sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-visible:opacity-100">
                         {isPlaying ? (
                             <HiMiniPause size={20} />
                         ) : (
@@ -47,7 +51,7 @@ export default function MusicPlayer() {
                     </div>
                 </div>
 
-                <div className="min-w-0 flex-1 text-left sm:flex-none">
+                <div className="hidden min-w-0 text-left sm:block">
                     <p className="truncate text-xs font-medium sm:max-w-[230px] sm:text-sm">
                         Can You Hear The Whistle Blow
                     </p>
@@ -58,7 +62,7 @@ export default function MusicPlayer() {
                 </div>
 
                 {isPlaying && (
-                    <div className="ml-1 flex h-5 shrink-0 items-end gap-[2px] sm:ml-3">
+                    <div className="ml-3 hidden h-5 shrink-0 items-end gap-[2px] sm:flex">
                         <span className="h-2 w-[2px] animate-pulse bg-white" />
                         <span className="h-4 w-[2px] animate-pulse bg-white" />
                         <span className="h-3 w-[2px] animate-pulse bg-white" />

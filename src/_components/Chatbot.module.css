@@ -1,0 +1,25 @@
+.pixelArt {
+    display: block;
+    object-fit: contain;
+    image-rendering: pixelated;
+    pointer-events: none;
+    user-select: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .launcher {
+        animation: mascotFloat 4.5s ease-in-out infinite;
+        will-change: transform;
+    }
+
+    @keyframes mascotFloat {
+        0%,
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+
+        50% {
+            transform: translate3d(0, -8px, 0);
+        }
+    }
+}
