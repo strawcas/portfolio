@@ -21,8 +21,8 @@
         var(--floating-control-bottom) + 3.5rem + 1.5rem
     );
     --floating-navigation-bottom: var(--music-player-clearance);
-    /* Also leave space for the greeting above the chatbot's square button. */
-    --footer-clearance: calc(var(--music-player-clearance) + 3.75rem);
+    /* Fit the 68px chat launcher, its 8px float, and a 12px gap on mobile. */
+    --footer-clearance: calc(var(--floating-control-bottom) + 5.5rem);
 }
 
 @media (min-width: 40rem) {
@@ -33,6 +33,10 @@
         );
         --music-player-clearance: calc(
             var(--floating-control-bottom) + 4.125rem + 1.5rem
+        );
+        /* Wider layouts also have room for the chatbot's greeting. */
+        --footer-clearance: calc(
+            var(--music-player-clearance) + 3.75rem
         );
     }
 }
@@ -49,7 +53,9 @@
 @media (min-width: 80rem) {
     :root {
         --floating-navigation-bottom: var(--floating-control-bottom);
-        --footer-clearance: calc(var(--music-player-clearance) + 3.75rem);
+        --footer-clearance: calc(
+            var(--music-player-clearance) + 3.75rem
+        );
     }
 }
 
