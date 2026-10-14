@@ -21,11 +21,12 @@ import {
     SiDocker,
     SiCloudflare,
     SiVercel,
+    SiFigma,
     SiTailwindcss,
     SiHtml5,
 } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
-import { TbBrandCSharp } from "react-icons/tb";
+import { TbBrandCSharp, TbBrandOpenai } from "react-icons/tb";
 import styles from "./Skillset.module.css";
 
 const groups = [
@@ -73,6 +74,8 @@ const groups = [
             ["Docker", SiDocker, "#8eb9f1"],
             ["Cloudflare", SiCloudflare, "#ecc18c"],
             ["Vercel", SiVercel, "#eeeaf6"],
+            ["Figma", SiFigma, "#b89be8"],
+            ["Codex", TbBrandOpenai, "#eeeaf6"],
         ],
     },
 ];

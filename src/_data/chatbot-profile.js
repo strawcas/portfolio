@@ -10,6 +10,35 @@ export const chatbotProfile = {
     pet: { name: "Chocnut", species: "cat" },
     education: "Computer Science graduate, cum laude",
     bio: "Joseph loves coding, math, web development, game development, and understanding how things work. He learns through Udemy courses, documentation, and hands-on projects, and enjoys experimenting and understanding ideas deeply.",
+    interests: {
+        favoriteSong: { title: "Island in the Sun", artist: "Weezer" },
+        musicTaste: {
+            background: "Joseph grew up with his grandfather, which influenced his love of classic rock.",
+            genres: ["Classic rock", "Indie", "Bedroom pop", "Shoegaze"],
+            classicRockBands: [
+                "Lynyrd Skynyrd",
+                "AC/DC",
+                "The Beatles",
+                "Creedence Clearwater Revival (CCR)",
+                "Pink Floyd",
+            ],
+        },
+        favoriteMovie: "Saving Private Ryan",
+        favoriteTvSeries: "Band of Brothers",
+        sitcoms: {
+            favorites: ["The Office", "Modern Family", "Friends", "The Big Bang Theory"],
+            favorite: "The Office",
+            favoriteCharacter: "Michael Scott",
+        },
+        hobbies: [
+            "Making video games using Unity and Godot",
+            "Playing video games a lot",
+            "Crocheting",
+            "Baking a lot",
+            "Watching lots of sitcoms and World War II documentaries",
+            "Speedcubing",
+        ],
+    },
     skills: {
         languages: [
             "TypeScript",
@@ -38,7 +67,7 @@ export const chatbotProfile = {
             "Supabase",
             "Appwrite",
         ],
-        tools: ["Git", "GitHub Actions", "Docker", "Cloudflare", "Vercel"],
+        tools: ["Git", "GitHub Actions", "Docker", "Cloudflare", "Vercel", "Figma", "Codex"],
         gameEngines: ["Godot", "Unity"],
     },
     capabilities: [
