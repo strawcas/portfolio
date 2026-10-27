@@ -24,10 +24,10 @@
         "featured": true,
         "artwork": "",
         "icon": "python",
-        "image": "",
+        "image": "/UnderCover.png",
         "imageAlt": "",
         "demoUrl": "",
-        "githubUrl": ""
+        "githubUrl": "https://github.com/strawcas/undercover"
     },
     {
         "id": "applyflow",
