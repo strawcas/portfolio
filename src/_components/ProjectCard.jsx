@@ -11,6 +11,7 @@ import {
     SiJavascript,
     SiNextdotjs,
     SiPhp,
+    SiPython,
     SiReact,
     SiThreedotjs,
 } from "react-icons/si";
@@ -22,6 +23,7 @@ const icons = {
     react: SiReact,
     flutter: SiFlutter,
     php: SiPhp,
+    python: SiPython,
     threejs: SiThreedotjs,
     javascript: SiJavascript,
 };

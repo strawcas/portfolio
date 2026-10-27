@@ -112,6 +112,7 @@
     padding: 0;
 }
 .tech {
+    max-width: 100%;
     min-height: 64px;
     display: flex;
     align-items: center;
@@ -132,9 +133,11 @@
     color: var(--tech-color);
 }
 .tech span {
+    min-width: 0;
     color: var(--portfolio-text-soft);
     font-size: 16px;
     line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
     .tech:hover {

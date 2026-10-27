@@ -1,5 +1,35 @@
 [
     {
+        "id": "undercover",
+        "name": "UnderCover",
+        "category": "AI travel insurance claims prototype",
+        "description": "Built UnderCover, a travel insurance claims prototype using Python, FastAPI, SQLite, React, and TypeScript. Implemented a LangChain agent with tool calling, fresh per-claim contexts, document retrieval, bounded retries, and human approval controls for simulated payouts.",
+        "stack": [
+            "Python",
+            "FastAPI",
+            "SQLite",
+            "React",
+            "TypeScript",
+            "LangChain",
+            "Pydantic",
+            "Vite",
+            "Tailwind CSS"
+        ],
+        "details": [
+            "Built as part of Week 1 of an AI agent development course.",
+            "Built REST APIs with FastAPI, persisted application data in SQLite, and created a React and TypeScript dashboard using Vite and Tailwind CSS.",
+            "Implemented a LangChain agent with tool calling and document retrieval, using a fresh context for each claim.",
+            "Used bounded retries and human approval controls for simulated payouts."
+        ],
+        "featured": true,
+        "artwork": "",
+        "icon": "python",
+        "image": "",
+        "imageAlt": "",
+        "demoUrl": "",
+        "githubUrl": ""
+    },
+    {
         "id": "applyflow",
         "name": "Apply Flow",
         "category": "Job application management",

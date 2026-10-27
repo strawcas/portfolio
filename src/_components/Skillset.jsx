@@ -8,6 +8,8 @@ import {
     SiNextdotjs,
     SiNodedotjs,
     SiExpress,
+    SiFastapi,
+    SiPydantic,
     SiFlutter,
     SiCodeigniter,
     SiMongodb,
@@ -16,6 +18,7 @@ import {
     SiMariadb,
     SiSupabase,
     SiAppwrite,
+    SiSqlite,
     SiGit,
     SiGithubactions,
     SiDocker,
@@ -24,9 +27,23 @@ import {
     SiFigma,
     SiTailwindcss,
     SiHtml5,
+    SiVite,
+    SiUv,
+    SiNpm,
+    SiOllama,
+    SiOpenrouter,
+    SiLangchain,
+    SiClaude,
+    SiPytest,
+    SiVitest,
 } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
-import { TbBrandCSharp, TbBrandOpenai } from "react-icons/tb";
+import {
+    TbBrandCSharp,
+    TbBrandOpenai,
+    TbHierarchy,
+    TbTestPipe,
+} from "react-icons/tb";
 import styles from "./Skillset.module.css";
 
 const groups = [
@@ -50,6 +67,8 @@ const groups = [
             ["Next.js", SiNextdotjs, "#eeeaf6"],
             ["Node.js", SiNodedotjs, "#98c886"],
             ["Express.js", SiExpress, "#d7d2e3"],
+            ["FastAPI", SiFastapi, "#8bd7b2"],
+            ["Pydantic", SiPydantic, "#eb8ba9"],
             ["Flutter", SiFlutter, "#7bc8ee"],
             ["CodeIgniter", SiCodeigniter, "#ed9b83"],
             ["Tailwind CSS", SiTailwindcss, "#7cd2db"],
@@ -64,18 +83,35 @@ const groups = [
             ["MariaDB", SiMariadb, "#c5b4a0"],
             ["Supabase", SiSupabase, "#8bd7b2"],
             ["Appwrite", SiAppwrite, "#eb8ba9"],
+            ["SQLite", SiSqlite, "#8dbdd9"],
+        ],
+    },
+    {
+        name: "AI Tools & Frameworks",
+        items: [
+            ["Ollama", SiOllama, "#eeeaf6"],
+            ["OpenRouter", SiOpenrouter, "#b89be8"],
+            ["LangChain", SiLangchain, "#8bd7b2"],
+            ["Deep Agents", TbHierarchy, "#98b9df"],
+            ["Claude Agent SDK", SiClaude, "#ed9b83"],
         ],
     },
     {
         name: "Tools",
         items: [
             ["Git", SiGit, "#ed9b83"],
+            ["uv", SiUv, "#b89be8"],
+            ["npm", SiNpm, "#ed9b83"],
+            ["Vite", SiVite, "#b89be8"],
             ["GitHub Actions", SiGithubactions, "#8eb9f1"],
             ["Docker", SiDocker, "#8eb9f1"],
             ["Cloudflare", SiCloudflare, "#ecc18c"],
             ["Vercel", SiVercel, "#eeeaf6"],
             ["Figma", SiFigma, "#b89be8"],
             ["Codex", TbBrandOpenai, "#eeeaf6"],
+            ["pytest", SiPytest, "#8eb9f1"],
+            ["Vitest", SiVitest, "#98c886"],
+            ["Playwright", TbTestPipe, "#8bd7b2"],
         ],
     },
 ];
