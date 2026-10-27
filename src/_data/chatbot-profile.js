@@ -6,7 +6,7 @@ import { contactLinks } from "./contact";
 // Only include information you are happy for portfolio visitors to see.
 export const chatbotProfile = {
     name: "Joseph Gabriel Castro",
-    role: "Software Engineer and Game Developer",
+    role: "Software Engineer / AI Agent Developer",
     pet: { name: "Chocnut", species: "cat" },
     education: "Computer Science graduate, cum laude",
     bio: "Joseph loves coding, math, web development, game development, and understanding how things work. He learns through Udemy courses, documentation, and hands-on projects, and enjoys experimenting and understanding ideas deeply.",

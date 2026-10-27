@@ -90,15 +90,15 @@ export default function Home() {
                                 className={`mt-2 ${headingClassName}`}
                             >
                                 I&apos;m Joseph Gabriel Castro
-                                <br />
-                                Software Engineer
+                                <span className="mt-3 block text-[clamp(1.125rem,3vw,2.5rem)] font-semibold">
+                                    Software Engineer / AI Agent Developer
+                                </span>
                             </h1>
 
                             <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg sm:leading-8">
-                                I build fast, scalable web
-                                applications using Next.js, Node.js,
-                                MongoDB, PHP, and modern full-stack
-                                technologies.
+                                I build AI agents and full-stack apps
+                                with Python, LangChain, Next.js, and
+                                TypeScript.
                             </p>
                         </div>
 

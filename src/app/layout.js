@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-    title: "Joseph Gabriel Castro | Software Engineer",
+    title: "Joseph Gabriel Castro | Software Engineer / AI Agent Developer",
     description: "Portfolio of Joseph Gabriel Castro",
 };
 
