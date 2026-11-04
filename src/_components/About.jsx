@@ -64,6 +64,13 @@ export default function About() {
                                 beyond what I learned in school.
                             </p>
                             <p>
+                                Recently, I&#39;ve been learning more
+                                about agent workflows,
+                                retrieval-augmented generation, MCP
+                                integrations, LLM observability, and
+                                SQL database access.
+                            </p>
+                            <p>
                                 I&#39;m naturally curious and I like
                                 understanding things deeply. When I
                                 get stuck on an idea, I&#39;ll

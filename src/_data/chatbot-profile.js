@@ -57,6 +57,7 @@ export const chatbotProfile = {
             "Express.js",
             "FastAPI",
             "Pydantic",
+            "SQLAlchemy Core",
             "Flutter",
             "CodeIgniter",
             "Tailwind CSS",
@@ -69,24 +70,31 @@ export const chatbotProfile = {
             "Supabase",
             "Appwrite",
             "SQLite",
+            "Qdrant",
         ],
         aiToolsAndFrameworks: [
             "Ollama",
             "OpenRouter",
             "LangChain",
+            "LangGraph",
+            "Langfuse",
+            "RAG",
+            "MCP",
             "Deep Agents",
             "Claude Agent SDK",
         ],
         tools: ["Git", "uv", "npm", "Vite", "GitHub Actions", "Docker", "Cloudflare", "Vercel", "Figma", "Codex", "pytest", "Vitest", "Playwright"],
         gameEngines: ["Godot", "Unity"],
     },
+    recentLearning: "Joseph recently learned Langfuse, Qdrant, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), LangGraph, and SQLAlchemy Core. UnderCover demonstrates LangGraph workflows, Langfuse tracing, and SQLAlchemy Core database access. Qdrant, RAG, and MCP are recent learning topics without a specific documented portfolio implementation.",
     capabilities: [
         "Build games using Godot and Unity. His game projects are not public.",
         "Build responsive websites and full-stack web applications with frontend interfaces, backend logic, APIs, authentication, and databases.",
         "Build dashboards, booking systems, subscription trackers, and e-commerce applications, as demonstrated by his portfolio projects.",
         "Build Flutter mobile applications and integrate pose detection and machine learning, as demonstrated by BetterGym.",
         "Run local LLMs with Ollama and connect applications to different LLM providers through OpenRouter.",
-        "Build LangChain agents with tool calling, fresh per-claim contexts, document retrieval, bounded retries, and human approval controls for simulated payouts, as demonstrated by the UnderCover course prototype.",
+        "Build LangChain and LangGraph agents with tool calling, per-claim state, document retrieval, bounded execution, Postgres checkpoints, and human sign-off for simulated payouts, as demonstrated by the UnderCover course prototype.",
+        "Trace claim runs with Langfuse and use SQLAlchemy Core for shared SQLite and Supabase PostgreSQL database access in the UnderCover course prototype.",
         "Use Deep Agents for subagents, file tools, and task delegation, and use Claude Agent SDK through a completed course lab.",
         "Design prompts and supply relevant business documents as context; manage agent tools, context, retries, execution limits, and delegation.",
         "Compare models on accuracy, latency, and token cost; plan, review, and validate AI-assisted development with coding agents.",
@@ -130,6 +138,7 @@ For questions about Joseph, use the profile below as your source of truth. Relat
 Do not invent qualifications, employment, proficiency levels, years of experience, project results, availability, rates, or personal details.
 If the profile does not contain an answer, say you do not have that information and suggest contacting Joseph when appropriate.
 Keep course-based projects identified as course projects, and describe evaluation metrics only in their documented project context.
+Distinguish recently learned skills from documented project implementations. Recent learning does not establish production experience or proficiency levels; claim specific project use only when the profile documents it.
 Joseph's game projects are not public. Do not invent game titles, release details, demos, or repository links.
 Share the supplied contact and project links when relevant. An empty link means no link is available.
 You may answer general technical questions using general knowledge, but do not present that knowledge as evidence of Joseph's experience.
