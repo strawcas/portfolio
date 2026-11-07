@@ -24,20 +24,24 @@ export default function MusicPlayer() {
 
     return (
         <div className="fixed bottom-[var(--floating-control-bottom)] left-4 z-50 sm:left-6">
-            <audio ref={audioRef} src="/song.mp3" loop />
+            <audio
+                ref={audioRef}
+                src="/Amie Blu - trees for the wood.mp3"
+                loop
+            />
 
             <button
                 type="button"
                 onClick={handlePlay}
-                aria-label={`${isPlaying ? "Pause" : "Play"} Can You Hear The Whistle Blow`}
+                aria-label={`${isPlaying ? "Pause" : "Play"} trees for the wood by Amie Blu`}
                 aria-pressed={isPlaying}
-                title="Can You Hear The Whistle Blow — 缺省"
+                title="trees for the wood — Amie Blu"
                 className="group flex h-14 w-14 cursor-pointer items-center justify-center rounded-xl border border-white/10 bg-[#080918]/80 p-1.5 text-white shadow-xl backdrop-blur-xl transition hover:border-white/20 hover:bg-[#0d0e22] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:h-auto sm:w-auto sm:justify-start sm:gap-3 sm:p-2 sm:pr-4"
             >
                 <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg sm:h-12 sm:w-12">
                     <Image
-                        src="/song_image.jpg"
-                        alt="Album cover"
+                        src="/Amie Blue - trees for the wood image.jpg"
+                        alt="trees for the wood cover artwork"
                         fill
                         className="object-cover"
                     />
@@ -53,11 +57,11 @@ export default function MusicPlayer() {
 
                 <div className="hidden min-w-0 text-left sm:block">
                     <p className="truncate text-xs font-medium sm:max-w-[230px] sm:text-sm">
-                        Can You Hear The Whistle Blow
+                        trees for the wood
                     </p>
 
                     <p className="truncate text-[11px] text-white/40 sm:text-xs">
-                        缺省
+                        Amie Blu
                     </p>
                 </div>
 
