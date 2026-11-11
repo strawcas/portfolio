@@ -4,6 +4,44 @@ Chocnut is Joseph Gabriel Castro's portfolio assistant, named and illustrated
 after his cat. It helps visitors understand Joseph's skills, projects, and
 experience, and shares the supplied project and contact links.
 
+## Selected provider: OpenRouter
+
+Chocnut will use OpenRouter instead of calling Google Gemini directly. NVIDIA
+Nemotron is the preferred initial model, with support for switching to other
+chat models available through OpenRouter. Keep the model configurable rather
+than tying the assistant to one model or model family.
+
+Status: provider decision approved; backend migration pending. The current
+implementation is documented in the next section. The configuration and
+behavior below are the migration target, not live functionality yet.
+
+- Call OpenRouter's OpenAI-compatible chat completions endpoint at
+  `https://openrouter.ai/api/v1/chat/completions` from `/api/chat`.
+- Store the server credential in `OPENROUTER_API_KEY` and the exact OpenRouter
+  model ID in `OPENROUTER_MODEL`. Keep the key on the server; do not use a public
+  environment variable or expose it through client code.
+- Select an available NVIDIA Nemotron free variant initially. Use the
+  [OpenRouter model catalog](https://openrouter.ai/collections/free-models/)
+  to confirm the exact ID and availability at implementation time. Other
+  OpenRouter chat models can be selected through the same configuration.
+- Prefer free variants with IDs ending in `:free`. Keep any configured fallback
+  models free unless paid usage is deliberately configured. Switching models
+  must preserve the profile context, accuracy rules, and plain-text replies.
+- Plan around the account's 1,000 free-model requests per day and the accepted
+  limit of 20 requests per minute. These limits are shared across visitors and
+  free-model usage on the account; they are not separate allowances per visitor
+  or model. Failed attempts also count toward the daily cap, and providers can
+  reach capacity earlier. Check [OpenRouter's free-model limits](https://openrouter.ai/collections/free-models/)
+  when configuring the deployment.
+- Preserve the client request format and `{ reply }` response. In the server
+  adapter, send the profile instruction as system context and map the client's
+  `model` role to OpenRouter's `assistant` role.
+- Add per-visitor request throttling and handle quota or provider-capacity
+  failures with a friendly unavailable message. Avoid uncontrolled retries
+  that consume the shared daily allowance.
+- Before enabling a model, check response speed, profile accuracy, and adherence
+  to Chocnut's voice using representative visitor questions.
+
 ## Current architecture
 
 - `src/_components/Chatbot.jsx` renders the floating cat launcher and chat panel.
@@ -84,5 +122,7 @@ safe-area spacing, and clearance from the music player, navigation, and footer.
    demonstrate them. Check that replies distinguish learning from project use
    and do not invent production experience.
 
-Future proposals to change the chat backend should be documented separately
-from its current behavior and implemented before being described as live.
+Keep the OpenRouter migration marked pending until the backend and deployment
+configuration have been updated and verified. Then update the current
+architecture to match the implementation. Future backend changes should also
+be documented separately from current behavior until implemented.
